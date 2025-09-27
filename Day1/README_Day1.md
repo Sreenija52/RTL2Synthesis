@@ -50,3 +50,42 @@ A **testbench** is a simulation environment that applies various inputs to your 
 - The simulator produces a `.vcd` file for waveform viewing in GTKWave.
 
 ---
+
+## 3. Lab: Simulating a 2-to-1 Multiplexer
+
+Let’s simulate a simple **2-to-1 multiplexer** using iverilog!
+
+###  Step 1: Clone the Workshop Repository
+
+```shell
+git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
+cd sky130RTLDesignAndSynthesisWorkshop/verilog_files
+```
+
+###  Step 2: Install Required Tools
+
+```shell
+sudo apt install iverilog
+sudo apt install gtkwave
+```
+
+###  Step 3: Simulate the Design
+
+Compile the design and testbench:
+
+```shell
+iverilog good_mux.v tb_good_mux.v
+```
+
+Run the simulation:
+
+```shell
+./a.out
+```
+
+View the waveform:
+
+```shell
+gtkwave tb_good_mux.vcd
+```
+
